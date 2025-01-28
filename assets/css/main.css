@@ -883,6 +883,11 @@ section,
   z-index: 1;
 }
 
+.carousel-item img {
+  width: 240px;
+  position: relative;
+}
+
 .hero .carousel {
   position: relative;
   width: 100%;
@@ -899,17 +904,14 @@ section,
   text-align: center;
 }
 
-.carousel-item img {
-  width: 240px;
-}
 
-/* .hero h2 {
+.hero h2 {
   margin-bottom: 30px;
   font-size: 48px;
   font-weight: 700;
   animation: fadeInDown 1s both;
   display: block;
-} */
+ } 
 
 
 .hero p {
@@ -1017,18 +1019,7 @@ section,
   }
 }
 
-.carousel-item{
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
-  height: 400px;
-  background-color: #000;
-}
 
-
-.carousel-container{
-  background-color: #059652;
-}
 
 /*--------------------------------------------------------------
 # Clients Section

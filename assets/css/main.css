@@ -34,6 +34,7 @@
 
 .dark-background {
   --background-color: #37517e;
+  --background-color: #ffffff;
   --default-color: #ffffff;
   --heading-color: #ffffff;
   --surface-color: #4668a2;
@@ -131,8 +132,11 @@ h6 {
 # Global Header
 --------------------------------------------------------------*/
 .header {
-  --background-color: #3d4d6a;
-  --heading-color: #ffffff;
+  --background-color: #ffffff;
+  --background-color: rgba(71, 178, 228, 0.8);
+  /* --background-color: #3d4d6a; */
+  /* --heading-color: #ffffff; */
+  --heading-color: #000;
   color: var(--default-color);
   background-color: var(--background-color);
   padding: 15px 0;
@@ -162,6 +166,7 @@ h6 {
 .header .btn-getstarted:focus {
   color: var(--contrast-color);
   background: var(--accent-color);
+  background: #8BBF43;
   font-size: 14px;
   padding: 8px 25px;
   margin: 0 0 0 30px;
@@ -169,10 +174,19 @@ h6 {
   transition: 0.3s;
 }
 
+.header .btn-getstarted:active,
+.header .btn-getstarted:focus:active{
+  background: #FD1F62;
+  transform: translateY(0px);
+
+}
+
 .header .btn-getstarted:hover,
 .header .btn-getstarted:focus:hover {
   color: var(--contrast-color);
   background: color-mix(in srgb, var(--accent-color), transparent 15%);
+  transform: translateY(-2px);
+  background: #FD1F62;
 }
 
 @media (max-width: 1200px) {
@@ -195,14 +209,18 @@ h6 {
 ------------------------------*/
 .index-page .header {
   --background-color: rgba(255, 255, 255, 0);
+  /* --background-color: #ffffff; */
   --heading-color: #ffffff;
+  --heading-color: #000;
   --nav-color: #ffffff;
 }
 
 /* Index Page Header on Scroll
 ------------------------------*/
 .index-page.scrolled .header {
-  --background-color: rgba(40, 58, 90, 0.9);
+  /* --background-color: rgba(40, 58, 90, 0.9); */
+  --background-color: rgba(255, 255, 255, 0.8);
+  --background-color: rgba(71, 178, 228, 0.6);
 }
 
 /*--------------------------------------------------------------
@@ -238,6 +256,7 @@ h6 {
     justify-content: space-between;
     white-space: nowrap;
     transition: 0.3s;
+    color: #000;
   }
 
   .navmenu a i,
@@ -256,6 +275,7 @@ h6 {
   .navmenu .active,
   .navmenu .active:focus {
     color: var(--nav-hover-color);
+    color: #FD1F62;
   }
 
   .navmenu .dropdown ul {
@@ -852,7 +872,7 @@ section,
   top: 0;
   width: 130%;
   height: 95%;
-  background: linear-gradient(to right, color-mix(in srgb, var(--background-color), transparent 90%), var(--background-color)), url("../img/hero-bg.jpg") center top no-repeat;
+  background: linear-gradient(to right, color-mix(in srgb, var(--background-color), transparent 90%), var(--background-color)), url("../img/hero-bg-11.jpg") center top no-repeat;
   background-size: cover;
   z-index: 0;
   border-radius: 0 0 50% 50%;
@@ -912,6 +932,7 @@ section,
   font-weight: 700;
   animation: fadeInDown 1s both;
   display: block;
+  color: #000;
  } 
 
 
@@ -920,6 +941,7 @@ section,
   margin: 0 auto 30px auto;
   color: color-mix(in srgb, var(--default-color), transparent 20%);
   animation: fadeInDown 1s both 0.2s;
+  color: #000;
 }
 
 .hero .carousel-control-prev,
@@ -949,6 +971,7 @@ section,
   color: var(--default-color);
   animation: fadeInUp 1s both 0.4s;
   border: 2px solid var(--accent-color);
+  color: #000;
 }
 
 .hero .btn-get-started:hover {

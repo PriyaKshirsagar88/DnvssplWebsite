@@ -149,7 +149,9 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 45px;
+
+  /* max-height: 45px; */
+  height: 55px;
   margin-right: 8px;
 }
 
@@ -387,6 +389,7 @@ h6 {
 @media (max-width: 1199px) {
   .mobile-nav-toggle {
     color: var(--nav-color);
+    color: #000;
     font-size: 28px;
     line-height: 0;
     margin-right: 10px;
@@ -905,7 +908,7 @@ section,
 }
 
 .carousel-item img {
-  width: 240px;
+  width: 245px;
   position: relative;
 }
 
@@ -956,6 +959,7 @@ section,
   line-height: 1;
   width: auto;
   height: auto;
+  color: rgba(0, 0, 0, 0.808);
 }
 
 .hero .btn-get-started {
@@ -994,6 +998,7 @@ section,
   border-radius: 50px;
   opacity: 0.3;
   transition: 0.3s;
+  background: rgb(100, 99, 99);
 }
 
 .hero .carousel-indicators li.active {
@@ -1049,13 +1054,13 @@ section,
 # Clients Section
 --------------------------------------------------------------*/
 .clients {
-  margin: 32px 0;
-  padding: 12px 0;
+  margin: 16px 0;
+  padding: 5px 0;
   /* background: #ffffff; */
 }
 
 .clients .swiper {
-  padding: 10px 0;
+  /* padding: 10px 0; */
 }
 
 .clients .swiper-wrapper {
@@ -1069,6 +1074,11 @@ section,
 
 .clients .swiper-slide img:hover {
   transform: scale(1.1);
+}
+
+.img-fluid-clients{
+  max-width: 132px;
+  
 }
 
 /*--------------------------------------------------------------
@@ -1104,6 +1114,8 @@ section,
   align-items: center;
   justify-content: center;
   border: 2px solid var(--accent-color);
+  /* margin: 0 90%;
+  width: 30%; */
 }
 
 .about .read-more i {
@@ -1122,6 +1134,18 @@ section,
   transform: translate(5px, 0);
 }
 
+#about-p{
+    width: 200%;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
 
 /*--------------------------------------------------------------
 # NEWS Section

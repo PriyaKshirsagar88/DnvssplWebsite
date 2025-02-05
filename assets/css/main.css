@@ -35,6 +35,7 @@
 .dark-background {
   --background-color: #37517e;
   --background-color: #ffffff;
+  /* --background-color: rgba(194, 194, 195, 0.9); */
   --default-color: #ffffff;
   --heading-color: #ffffff;
   --surface-color: #4668a2;
@@ -56,15 +57,19 @@ body {
 }
 
 a {
+  position: relative;
   color: var(--accent-color);
   text-decoration: none;
   transition: 0.3s;
+  
 }
 
 a:hover {
   color: color-mix(in srgb, var(--accent-color), transparent 25%);
   text-decoration: none;
+  
 }
+
 
 h1,
 h2,
@@ -224,7 +229,12 @@ h6 {
   --background-color: rgba(255, 255, 255, 0.8);
   --background-color: rgba(71, 178, 228, 0.6);
   --background-color: rgb(245,246,248);
+    box-shadow: 0 1px 10px 0 rgba(0,0,0,0.5);
   /* --background-color: rgb(218, 220, 222); */
+  /* --background-color:rgb(241, 241, 241); */
+  /* --background-color:rgb(126, 144, 154); */
+  /* --background-color: rgb(206, 210, 204); */
+  /* --background-color:rgb(218, 218, 218); */
 }
 
 /*--------------------------------------------------------------
@@ -252,7 +262,7 @@ h6 {
   .navmenu a:focus {
     color: var(--nav-color);
     padding: 18px 15px;
-    font-size: 15px;
+    font-size: 17px;
     font-family: var(--nav-font);
     font-weight: 400;
     display: flex;
@@ -280,7 +290,26 @@ h6 {
   .navmenu .active:focus {
     color: var(--nav-hover-color);
     color: #FD1F62;
+    /* text-decoration:2px underline #47b2e4 ; */
   }
+  
+  /* .navmenu a{
+    position: relative;
+  }
+
+  .navmenu a:before{
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    height: 6px;
+    width: 0;
+    background: #47b2e4;
+    border-radius: 50px;
+    transition: width 0.3s ease;
+  }
+  .navmenu a:hover{
+    width: 100%;
+  } */
 
   .navmenu .dropdown ul {
     margin: 0;
@@ -305,6 +334,7 @@ h6 {
   .navmenu .dropdown ul a {
     padding: 10px 20px;
     font-size: 15px;
+    font-size: 19px;
     text-transform: none;
     color: var(--nav-dropdown-color);
   }
@@ -938,6 +968,7 @@ section,
   animation: fadeInDown 1s both;
   display: block;
   color: #000;
+  color: #37517e;
  } 
 
 
@@ -1201,6 +1232,7 @@ section,
   width: 200px;
 }
 .book-demo:hover{
+  background: #00a1f1;
   transform: translateY(-2px);
 }
 .news-content {
@@ -1258,6 +1290,11 @@ section,
   }
 }
 
+.sec1{
+  box-shadow: 0.5px 0.5px 5px 0 rgba(0,0,0,0.3);
+  /* border: 0.5px solid grey; */
+}
+
 /*--------------------------------------------------------------
 # POPUP - NEWS Section
 --------------------------------------------------------------*/
@@ -1278,6 +1315,11 @@ section,
   /* max-width: 30vw; Set a reasonable max width */
   /* margin: auto; Keeps it centered */
 /* } */ 
+
+
+.modal-backdrop{
+  background-color: rgba(0, 0, 0, 0.5);
+}
 
 .modal-content{
   padding:0 15px;
@@ -1371,10 +1413,25 @@ input:active, input:focus {
   color: #ffffff;
   font-size: 16px;
   background: #202020;
+  background: #47b2e4;
   padding:11px 15px;
+  border:2px solid #fff;
   border-radius: 8px;
+  /* border-radius: 50px; */
   margin-top: 14px;
 }
+
+.popup-btn:hover{
+  background:  #00a1f1;
+  transform: translateY(-2px);
+
+}
+
+.popup-btn:active{
+  background: #47b2e4;
+  transform: translateY(0px);
+}
+
 .popup-logo{
   width: 180px ;
   margin-bottom: 10px;

@@ -223,6 +223,8 @@ h6 {
   /* --background-color: rgba(40, 58, 90, 0.9); */
   --background-color: rgba(255, 255, 255, 0.8);
   --background-color: rgba(71, 178, 228, 0.6);
+  --background-color: rgb(245,246,248);
+  /* --background-color: rgb(218, 220, 222); */
 }
 
 /*--------------------------------------------------------------
@@ -1135,16 +1137,10 @@ section,
 }
 
 #about-p{
-    width: 200%;
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 1rem;
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    unicode-bidi: isolate;
+    font-size: 20px ;
+    text-align: justify;
+    text-justify: inter-word;
+    
 }
 
 /*--------------------------------------------------------------
@@ -1152,21 +1148,18 @@ section,
 --------------------------------------------------------------*/
 .features .features-item {
   color: color-mix(in srgb, var(--default-color), transparent 20%);
+  /* gap: 50px; */
 }
 
 .features .features-item+.features-item {
   margin-top: 100px;
 }
 
-@media (max-width: 640px) {
-  .features .features-item+.features-item {
-    margin-top: 40px;
-  }
-}
+
 
 .features .features-item h3 {
   font-weight: 700;
-  font-size: 26px;
+  font-size: 40px;
 }
 
 .features .features-item ul {
@@ -1194,6 +1187,229 @@ section,
   margin-bottom: 0;
 }
 
+
+
+.book-demo{
+  color: #ffffff;
+  background: #47b2e4;
+  font-size: 16px;
+  padding: 13px 25px;
+  border: 2px solid #ffffff;
+  border-radius: 50px;
+  transition: 0.3s;
+  margin-top: 15px;
+  width: 200px;
+}
+.book-demo:hover{
+  transform: translateY(-2px);
+}
+.news-content {
+  text-align: justify;
+  text-justify: inter-word;
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+.news-content-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* height: 20dvw; */
+  gap: 50px;
+
+}
+
+@media (max-width: 640px) {
+  .features .features-item+.features-item {
+    margin-top: 40px;
+  }
+  .news-content-container{
+    gap: 10px;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 1200px){
+  .news-content-container{
+    gap: 8px;
+  }
+}
+
+@media (max-width: 995px) {
+  .news-content-container{
+    gap: 0px;
+   
+  }
+
+  .news-img{
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .news-content-container{
+    margin-top: 50px;
+    gap: 10px;
+    
+  }
+
+  .features .features-item+.features-item {
+    margin-top: 50px;
+  }
+}
+
+/*--------------------------------------------------------------
+# POPUP - NEWS Section
+--------------------------------------------------------------*/
+.popup-form{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  
+}
+
+/* .modal-content {
+  padding-left: 20px;
+  padding-right: 20px;
+  width: auto; /* Removes 100% width and adjusts based on content */
+  /* max-width: 30vw; Set a reasonable max width */
+  /* margin: auto; Keeps it centered */
+/* } */ 
+
+.modal-content{
+  padding:0 15px;
+}
+
+
+.modal-header{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding:0 0 15px;
+}
+
+.modal-body{
+  margin: 0 0px;
+}
+
+.popup-h2{
+  color: #202020;
+  font-size: 22px;
+  text-align: center;
+}
+
+.popup-p{
+  color: #202020;
+  font-size: 14px;
+  text-align: center;
+}
+
+.input-content{
+  background: #ffffff;
+  padding:11px 7.5px;
+  margin-top: 7px;
+  /* width: 80%; */
+  border: 1px solid #a3a1a16e;
+  border-radius: 8px;
+}
+.form-input::placeholder {
+
+  /* color: #2a97b56e; */  
+}
+
+input:active, input:focus { 
+  font-size: 10px;
+  padding-bottom: 20px;
+  border: 2px solid #0072a7;
+  outline: none; 
+  
+}
+
+.input-content::placeholder{
+  color: #a3a1a1;
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+
+.popup-legend{
+  font-size: 16px;
+  color: #000;
+  padding:0 0 0;
+  font-family: Helvetica, sans-serif;
+  margin-top: 12px;
+}
+
+.popup-selectcompany {
+  display: flex;
+  flex-flow: column;
+  
+}
+
+/* .popup-label img{
+  display: grid;
+  grid-template-columns: 14px minmax(0px, 1fr);
+  word-break: break-word;
+  gap: 10px;
+  align-items: center;
+  font-size: 14px;
+} */
+
+.popup-span{
+  color: #000;
+
+}
+
+.child-icons{
+  width: 110px;
+  margin-left: 10px;
+}
+
+.popup-btn{
+  color: #ffffff;
+  font-size: 16px;
+  background: #202020;
+  padding:11px 15px;
+  border-radius: 8px;
+  margin-top: 14px;
+}
+.popup-logo{
+  width: 180px ;
+  margin-bottom: 10px;
+}
+.btn-close{
+  margin-top: 10px;
+  margin-left:440px;
+}
+.popup-p2{
+  color: #202020;
+  font-size: 10px;
+  text-align: center;
+  margin-top: 12px;
+}
+.form-floating{
+  position: relative;
+}
+.icon{
+  position: absolute;
+  top:calc(20%);
+  left: 12px;  
+}
+.form-floating .form-control{
+  left: 20px;
+  padding-left: 50px;
+  font-size: 16px;
+}
+
+.form-floating label{
+  margin-left: 40px;
+}
+
+.size{
+  font-size: 24px;
+}
 
 /*--------------------------------------------------------------
 # Services Section

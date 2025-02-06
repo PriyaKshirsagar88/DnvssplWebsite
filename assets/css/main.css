@@ -176,7 +176,7 @@ h6 {
   background: #8BBF43;
   font-size: 14px;
   padding: 8px 25px;
-  margin: 0 0 0 30px;
+  margin: 0 0 0 15px;
   border-radius: 50px;
   transition: 0.3s;
 }
@@ -291,26 +291,41 @@ h6 {
     color: var(--nav-hover-color);
     color: #FD1F62;
     /* text-decoration:2px underline #47b2e4 ; */
+   
+
+  }
+  .navmenu li > a {
+    position: relative; /* Needed for the pseudo-element */
+    color: #000; /* Default text color */
+    text-decoration: none; /* Remove default underline */
+    transition: color 0.3s ease-in-out; /* Smooth color transition */
+  }
+
+  /* Create animated underline */
+  .navmenu li > a::after {
+    content: ""; /* Empty element for underline */
+    position: absolute;
+    left: 10px;
+    bottom: 7px;
+    width: 0%; /* Initially hidden */
+    height: 3px; /* Thickness of the underline */
+    background-color: #47b2e4; /* Underline color */
+    transition: width 0.3s ease-in-out; /* Smooth animation */
   }
   
-  /* .navmenu a{
-    position: relative;
+  .nav-underline > a::after {
+    background-color: #8BBF43 !important;
+    
+    
   }
+  
 
-  .navmenu a:before{
-    content: "";
-    position: absolute;
-    bottom: -2px;
-    height: 6px;
-    width: 0;
-    background: #47b2e4;
-    border-radius: 50px;
-    transition: width 0.3s ease;
+  .navmenu li:hover > a::after,
+  .navmenu .active::after {
+    width: 80%; /* Expand the underline on hover/active */
   }
-  .navmenu a:hover{
-    width: 100%;
-  } */
-
+  
+  
   .navmenu .dropdown ul {
     margin: 0;
     padding: 10px 0;
@@ -543,6 +558,10 @@ h6 {
   .mobile-nav-active .navmenu>ul {
     display: block;
   }
+}
+
+.contact{
+  padding-right: 16px !important;
 }
 
 /*--------------------------------------------------------------
@@ -1267,15 +1286,30 @@ section,
   }
 }
 
-@media (max-width: 995px) {
+@media only screen and (max-width: 991px) and  (min-width:768px) {
   .news-content-container{
-    gap: 0px;
-   
+    width: 70%;
+    
   }
 
-  .news-img{
-    max-width: 100%;
+  /* .img-fluid{
+     max-width: 150%;
+    
+  } */
+  .right1{
+   display: flex;
+   flex-direction: column-reverse;
+   justify-content: center;
+   align-items: center;
   }
+
+  .left1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
 }
 
 @media (max-width: 768px) {

@@ -2275,4 +2275,7 @@ font-size: 28px;
     font-size: 30px !important;
 
   }
+  .services-title{
+    padding-bottom: 0px !important;
+  }
 }

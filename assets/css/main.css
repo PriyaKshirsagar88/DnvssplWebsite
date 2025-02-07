@@ -210,6 +210,10 @@ h6 {
   .header .navmenu {
     order: 3;
   }
+
+  .logo img{
+    height: 45px !important;
+  }
 }
 
 /* Index Page Header
@@ -1527,16 +1531,16 @@ input:active, input:focus {
 .services .service-item {
   background-color: var(--surface-color);
   box-shadow: 0px 5px 90px 0px rgba(0, 0, 0, 0.1);
-  padding: 50px 30px;
+  padding:20px;
   transition: all ease-in-out 0.4s;
   height: 100%;
 }
 
-.services .service-item .icon {
+.services .service-item .icon1 {
   margin-bottom: 10px;
 }
 
-.services .service-item .icon i {
+.services .service-item .icon1 i {
   color: var(--accent-color);
   font-size: 36px;
   transition: 0.3s;
@@ -1550,6 +1554,7 @@ input:active, input:focus {
 
 .services .service-item h4 a {
   color: var(--heading-color);
+  color: #ffff;
   transition: ease-in-out 0.3s;
 }
 
@@ -1563,8 +1568,59 @@ input:active, input:focus {
   transform: translateY(-10px);
 }
 
-.services .service-item:hover h4 a {
+/* .services .service-item:hover h4 a {
   color: var(--accent-color);
+  color: #a3a1a1;
+} */
+
+.service-img{
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.services-img{
+  width: 100%;
+  margin: 0 0 !important;
+}
+
+.icon2{
+  width: 250px;
+  margin-left: 9px;
+}
+
+.services-opted{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 90px;
+  background-color: #00627A;
+  border-radius: 5px;
+}
+
+.services-h4{
+  font-size: 20px;
+}
+
+.services-btn{
+  padding: 16px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.services-button{
+  font-size: 20px;
+  font-weight: 500;
+  background-color: #00627A;
+  width: 300px;
+}
+
+.services-button:hover{
+  background: #00627abe;
+  transform: translateY(-2px);
 }
 
 /*--------------------------------------------------------------
@@ -1601,8 +1657,8 @@ input:active, input:focus {
 }
 
 .call-to-action h3 {
-  color: var(--default-color);
-  font-size: 28px;
+color:#37517e;
+font-size: 28px;
   font-weight: 700;
 }
 
@@ -1747,6 +1803,10 @@ input:active, input:focus {
   .pricing .box {
     max-width: 100%;
     margin: 0 auto 30px auto;
+  }
+
+  .logo img{
+    height: 38px !important;
   }
 }
 

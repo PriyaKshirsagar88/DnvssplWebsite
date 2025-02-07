@@ -317,11 +317,7 @@ h6 {
     transition: width 0.3s ease-in-out; /* Smooth animation */
   }
   
-  .nav-underline > a::after {
-    background-color: #8BBF43 !important; 
-  }
   
-
   .navmenu li:hover > a::after,
   .navmenu .active::after {
     width: 80%; /* Expand the underline on hover/active */
@@ -1599,11 +1595,64 @@ input:active, input:focus {
   border-radius: 5px;
 }
 
-.services-h4{
+.services-opted1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 90px;
+  background-color: #292451;
+  border-radius: 5px;
+}
+
+.services-opted2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 90px;
+  background-color: #3D13A6;
+  border-radius: 5px;
+}
+
+.services-opted3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 90px;
+  background-color: #09A8A2;
+  border-radius: 5px;
+}
+
+.services-opted h4{
+  margin: 0 !important;
+  padding: 0 !important;
   font-size: 20px;
+  color: #fff;
+}
+
+.services-opted1 h4{
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 20px;
+  color: #fff;
+}
+.services-opted2 h4{
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 20px;
+  color: #fff;
+}
+.services-opted3 h4{
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 20px;
+  color: #fff;
 }
 
 .services-btn{
+  margin-top: 20px;
   padding: 16px;
   width: 100%;
   display: flex;
@@ -1613,15 +1662,64 @@ input:active, input:focus {
 
 .services-button{
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 700;
   background-color: #00627A;
   width: 300px;
 }
 
 .services-button:hover{
-  background: #00627abe;
+  background: rgba(0, 98, 122, 0.745);
   transform: translateY(-2px);
 }
+
+.services-button1{
+  font-size: 20px;
+  font-weight: 700;
+  background-color: #292451;
+  width: 300px;
+}
+
+.services-button1:hover{
+  background: rgba(41, 36, 81, 0.745);
+  transform: translateY(-2px);
+}
+
+.services-button2{
+  font-size: 20px;
+  font-weight: 700;
+  background-color: #3D13A6;
+  width: 300px;
+}
+
+.services-button2:hover{
+  background: rgba(61, 19, 166, 0.745);
+  transform: translateY(-2px);
+}
+
+.services-button3{
+  font-size: 20px;
+  font-weight: 700;
+  background-color: #09A8A2;
+  width: 300px;
+}
+
+.services-button3:hover{
+  background: rgba(9, 168, 163, 0.745);
+  transform: translateY(-2px);
+}
+
+.services-head{
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.services-head h4{
+  font-size: 32px;
+  font-weight: 700;
+}
+
 
 /*--------------------------------------------------------------
 # Call To Action Section

@@ -2278,4 +2278,8 @@ font-size: 28px;
   .services-title{
     padding-bottom: 0px !important;
   }
+
+  .hero-height::after{
+    height: 100%;
+  }
 }

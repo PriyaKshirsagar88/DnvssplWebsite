@@ -720,6 +720,103 @@ h6 {
   font-size: 13px;
 }
 
+/* --------------------------------------------------------------
+#POPUPS
+-------------------------------------------------------------- */
+.prpo-divh4{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prpo-h4{
+  font-size: 40px !important;
+  font-weight: 550 !important;
+  color: #121212;
+}
+
+.prpo-p{
+  font-size: 16px;
+  text-align: justify;
+}
+
+.prpo-ul{
+  font-size: 16px;
+  text-align: justify;
+}
+
+.prpo-h3{
+  margin-top: 25px !important;
+  font-size: 24px !important;
+  font-weight: 550 !important;
+  color: #121212;
+
+}
+
+.prpo-h2{
+  margin-top: 25px !important;
+  font-size: 18px !important;
+  font-weight: 550 !important;
+  color: #121212;
+
+}
+
+.prpo-header{
+  padding:15px 15px !important;
+ 
+}
+
+.prpo-table{
+  margin-bottom: 25px !important;
+  border: 1px solid grey;
+}
+
+th{
+  padding: 12px;
+  text-align: center;
+  border: 1px solid grey;
+}
+
+td{
+  padding: 12px;
+  border: 1px solid grey;
+}
+
+.prpo-p a{
+  color: #121212;
+  text-decoration: underline #121212;
+}
+
+.prpo-p1{
+  font-size: 16px;
+  margin-bottom: 8px !important;
+
+}
+
+.contactInfo-heading{
+  margin-top: 25px !important;
+  margin-bottom: 8px !important;
+
+}
+
+.PrPo-Modal{
+  height: 720px !important;
+  overflow-y: scroll !important;
+  overflow-x: hidden !important;
+  padding:  0 10px !important;
+}
+
+.dropdown-career{
+  height: 58px;
+  padding:16px 12px; 
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+}
+
+.careerInfo-heading{
+  margin-top: 30px !important;
+}
+
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -1468,7 +1565,7 @@ input:active, input:focus {
   background: #202020;
   background: #47b2e4;
   padding:11px 15px;
-  border:2px solid #fff;
+  border:none !important;
   border-radius: 8px;
   /* border-radius: 50px; */
   margin-top: 14px;

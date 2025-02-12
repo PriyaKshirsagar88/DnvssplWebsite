@@ -817,6 +817,16 @@ td{
   margin-top: 30px !important;
 }
 
+.sticky-header{
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 1050;
+  /* box-shadow: 0 1px 10px 0 rgba(0,0,0,0.5); */
+
+}
+
+
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -1203,7 +1213,7 @@ section,
 .clients {
   margin: 16px 0;
   padding: 5px 0;
-  /* background: #ffffff; */
+  background: #ffffff;
 }
 
 .clients .swiper {
@@ -1429,7 +1439,7 @@ section,
 
 @media (max-width: 768px) {
   .news-content-container{
-    margin-top: 50px;
+    margin-top: 40px;
     gap: 10px;
     
   }
@@ -1586,9 +1596,14 @@ input:active, input:focus {
   width: 180px ;
   margin-bottom: 10px;
 }
+.btn-closee{
+  display: flex;
+  justify-content: right;
+}
+
 .btn-close{
   margin-top: 10px;
-  margin-left:440px;
+  /* margin-left:440px; */
 }
 .popup-p2{
   color: #202020;
@@ -2379,4 +2394,46 @@ font-size: 28px;
   .hero-height::after{
     height: 100%;
   }
+  
+  .section-title{
+    padding-bottom: 20px;
+  }
+
+  section, 
+  .section{
+    /* padding: 20px 0; */
+    padding: 0 0 20px 0;
+    
+  }
+
+  .features .features-item+.features-item{
+    margin-top: 20px;
+  }
+
+  section, 
+  #services{
+    padding-top: 20px !important; 
+  }
+
+  section,
+  #call-to-action{
+    padding: 60px 0;
+    /* margin-top: 40px; */
+  }
+
+  section,
+  #Features{
+    padding-bottom: 60px;
+  }
+
+  .carousel-item img {
+    width: 200px;
+  }
+
+  .news-content-container {
+    text-align: center;
+    align-items: center;
+  }
+
+  
 }

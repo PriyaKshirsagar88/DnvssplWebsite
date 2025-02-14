@@ -558,7 +558,7 @@ h6 {
   }
 }
 
-.contact{
+.paddingRight{
   padding-right: 16px !important;
 }
 
@@ -2360,6 +2360,21 @@ font-size: 28px;
   /* Add your styles here */
 }
 
+@media only screen and (max-width:991px) and (min-width: 576px) {
+  .card-deck .card {
+    flex: none;
+    width: 230px;
+
+    
+}
+.card-deck{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+}
+
 @media (max-width:650px){
   .hero-p{
     font-size: 14px;
@@ -2458,6 +2473,23 @@ font-size: 28px;
     margin-top: 0px;
   }
 
+  section, .contact {
+    text-align:left;
+  }
+
+  .mobile-height{
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  .PrPo-Modal, .mobile-height{
+    height: 80dvh !important;
+  }
+  
+  .mobile-margin{
+    margin-top: 0 !important;
+  }
+
 }
 
 @media (max-width: 536px){
@@ -2467,5 +2499,6 @@ font-size: 28px;
     width: 170px;
     
   }
+  
 }
 

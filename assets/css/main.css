@@ -2490,6 +2490,15 @@ font-size: 28px;
     margin-top: 0 !important;
   }
 
+  .services-btn{
+    padding-top: 0 !important;
+  }
+
+  .purecounter-h3{
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+
 }
 
 @media (max-width: 536px){
